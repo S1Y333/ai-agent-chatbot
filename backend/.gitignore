@@ -1,0 +1,19 @@
+# NPM
+node_modules
+npm-debug.log
+sandboxes.ts
+
+# Code Editor Settings
+.idea
+.vs
+.env
+credential.yaml
+connections.yaml
+downloads/*
+
+# Ignore any Webpack generated files
+dist
+
+tsconfig.tsbuildinfo
+
+.DS_Store
