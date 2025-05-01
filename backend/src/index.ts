@@ -7,9 +7,9 @@ import { streamAgentResponse } from './services/streamAgent';
 import { aiClient } from './utils/aiClient';
 import cors from 'cors';
 import { Request, Response } from 'express';
-// import multer from 'multer';
+import multer from 'multer';
 
-// const upload = multer({ storage: multer.memoryStorage() });
+const upload = multer({ storage: multer.memoryStorage() });
 
 
 dotenv.config();
@@ -115,9 +115,6 @@ app.post ('/add-filesearch', async (req, res) => {
 });
 
 
-app.get('/', (_req, res) => {
-  res.send('Hello from TypeScript backend!');
-});
 
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);

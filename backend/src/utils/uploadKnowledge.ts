@@ -3,7 +3,7 @@ import { aiClient } from './aiClient'; // adjust path if needed
 import * as fs from 'fs';
 import * as path from 'path';
 
-const standards_file_path = "instructions/knowledge.txt";
+// const standards_file_path = "../instructions/knowledge.txt";
 
 // export async function uploadKnowledgeFiles(agentId: string) {
 //   try {
@@ -16,7 +16,7 @@ const standards_file_path = "instructions/knowledge.txt";
    
 //        const standardsFileBuffer = fs.readFileSync(standardsFilePath);
    
-//        const uploadedFilePoller = await aiClient.agents.uploadFileAndPoll({
+//        const uploadedFilePoller = await aiClient.agents.uploadFile({
          
 //          name: 'knowledge.txt',
 //          content: standardsFileBuffer,
